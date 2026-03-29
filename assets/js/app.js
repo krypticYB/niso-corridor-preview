@@ -163,6 +163,35 @@ if (diagramCard && diagramInfo) {
   updateDiagram('genco');
 }
 
+// ── Comparison slider ─────────────────────────────────
+const corridorCompare = document.getElementById('corridorCompare');
+const compareOverlay  = document.getElementById('compareOverlay');
+const compareDivider  = document.getElementById('compareDivider');
+
+if (corridorCompare && compareOverlay && compareDivider) {
+  let dragging = false;
+
+  const setPos = (clientX) => {
+    const rect = corridorCompare.getBoundingClientRect();
+    const pct = Math.max(2, Math.min(98, ((clientX - rect.left) / rect.width) * 100));
+    compareOverlay.style.setProperty('--clip', `${pct}%`);
+    compareDivider.style.left = `${pct}%`;
+  };
+
+  corridorCompare.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    corridorCompare.setPointerCapture(e.pointerId);
+    setPos(e.clientX);
+  });
+
+  corridorCompare.addEventListener('pointermove', (e) => {
+    if (dragging) setPos(e.clientX);
+  });
+
+  corridorCompare.addEventListener('pointerup',     () => { dragging = false; });
+  corridorCompare.addEventListener('pointercancel', () => { dragging = false; });
+}
+
 if (executiveWall) {
   executiveWall.addEventListener('pointermove', (event) => {
     const rect = executiveWall.getBoundingClientRect();

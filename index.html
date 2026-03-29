@@ -80,16 +80,42 @@
               <h2>From bare walls to institutional memory</h2>
               <p class="section-intro">The corridor runs the full length of the NISO wing — from the lift lobby to the MD's office. Every surface is an opportunity. What follows is a structured plan to transform this space.</p>
             </div>
-            <div class="before-after-grid">
-              <div class="before-panel">
-                <div class="ba-label">Current State</div>
-                <img src="assets/img/corridor-actual-02.jpg" alt="Current corridor — bare white walls" />
-                <p>Bare plaster walls. No identity. No institutional presence. A missed opportunity.</p>
+            <div class="corridor-compare" id="corridorCompare">
+              <!-- BEFORE: bare corridor -->
+              <div class="compare-base">
+                <img src="assets/img/corridor-actual-05.jpg" alt="Current corridor — bare white walls" />
+                <div class="compare-badge before-badge">Before</div>
               </div>
-              <div class="after-panel">
-                <div class="ba-label">Proposed Installation</div>
-                <img src="assets/img/page-01.png" alt="Proposed corridor installation" />
-                <p>Structured narrative panels, acrylic finishes, integrated LED lighting. A corridor that works.</p>
+              <!-- AFTER: simulated installation -->
+              <div class="compare-overlay" id="compareOverlay" style="--clip:50%">
+                <div class="compare-photo-wrap">
+                  <img src="assets/img/corridor-actual-05.jpg" alt="Corridor with proposed installation" />
+                  <div class="sim-tint"></div>
+                  <div class="sim-panel sim-left">
+                    <span class="sim-eyebrow">Wall 01 · Origins</span>
+                    <span class="sim-title">1896–1972</span>
+                    <span class="sim-body">Nigeria's electricity story begins in colonial Lagos — from a single generating plant at Marina to a national statutory authority.</span>
+                    <div class="sim-led"></div>
+                  </div>
+                  <div class="sim-panel sim-right">
+                    <span class="sim-eyebrow">Wall 05 · NISO</span>
+                    <span class="sim-title">2023</span>
+                    <span class="sim-body">Institutional separation of system operation — independence, neutrality, and a new mandate for Nigeria's grid.</span>
+                    <div class="sim-led"></div>
+                  </div>
+                  <div class="sim-floor-glow"></div>
+                </div>
+                <div class="compare-badge after-badge">Proposed</div>
+              </div>
+              <!-- Draggable divider -->
+              <div class="compare-divider" id="compareDivider" style="left:50%">
+                <div class="divider-track"></div>
+                <button class="divider-grip" aria-label="Drag to compare before and after">
+                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="13,8 7,16 13,24"/>
+                    <polyline points="19,8 25,16 19,24"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="install-spec glass-card revealable">
