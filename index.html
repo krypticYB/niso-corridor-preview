@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NISO Legacy Corridor – Interactive Walkthrough</title>
+  <meta name="description" content="An immersive scroll-based walkthrough presenting Nigeria's electricity evolution and NISO's role." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <div class="ambient-grid"></div>
+    <div class="ambient-noise"></div>
+    <div class="corridor-shell" aria-hidden="true">
+      <div class="corridor-topbar">
+        <span class="topbar-label">NISO Legacy Corridor</span>
+        <span class="topbar-divider"></span>
+        <span class="topbar-value" id="activeSectionLabel">Corridor Entry</span>
+      </div>
+      <div class="corridor-line"></div>
+      <div class="corridor-walls corridor-left"></div>
+      <div class="corridor-walls corridor-right"></div>
+      <div class="light-pool light-pool-a"></div>
+      <div class="light-pool light-pool-b"></div>
+    </div>
+
+    <nav class="section-nav" aria-label="Section navigation">
+      <a href="#intro" class="section-dot active" data-nav="intro"><span>Entry</span></a>
+      <a href="#origins" class="section-dot" data-nav="origins"><span>Origins</span></a>
+      <a href="#development" class="section-dot" data-nav="development"><span>Development</span></a>
+      <a href="#reform" class="section-dot" data-nav="reform"><span>Reform</span></a>
+      <a href="#structure" class="section-dot" data-nav="structure"><span>Structure</span></a>
+      <a href="#niso" class="section-dot" data-nav="niso"><span>NISO</span></a>
+      <a href="#executive" class="section-dot" data-nav="executive"><span>Executive Wall</span></a>
+    </nav>
+
+    <main>
+      <section class="wall-section hero-section is-current" id="intro" data-title="Corridor Entry">
+        <div class="wall-frame wall-center revealable">
+          <div class="reference-layer ref-intro"></div>
+          <div class="wall-content hero-content">
+            <p class="eyebrow">Interactive Walkthrough</p>
+            <h1>NISO Legacy Corridor</h1>
+            <p class="hero-subtitle">A scroll-based concept experience simulating a walk through institutional memory, from the earliest sparks of electricity in Nigeria to the emergence of the Nigerian Independent System Operator.</p>
+            <div class="hero-metrics">
+              <div class="metric-card">
+                <span class="metric-value">7</span>
+                <span class="metric-label">Corridor walls</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">130+</span>
+                <span class="metric-label">Years of power history</span>
+              </div>
+              <div class="metric-card">
+                <span class="metric-value">2023+</span>
+                <span class="metric-label">New legislative mandate</span>
+              </div>
+            </div>
+            <div class="hero-quote glass-card">
+              <span class="quote-kicker">Narrative intent</span>
+              <p>Transforming circulation space into a curated journey of authority, continuity, coordination, and national progress.</p>
+            </div>
+            <a class="scroll-invite" href="#origins">Begin the walkthrough</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section" id="origins" data-title="Origins of Electricity in Nigeria">
+        <div class="wall-frame wall-left revealable">
+          <div class="reference-layer ref-history"></div>
+          <div class="wall-content">
+            <div class="section-heading">
+              <p class="eyebrow">Wall 01</p>
+              <h2>Origins of Electricity in Nigeria</h2>
+              <p class="section-intro">The story begins long before modern reform. Early generation, early utility structures, and early national coordination laid the foundation for the system that would eventually become a modern grid.</p>
+            </div>
+
+            <div class="timeline-widget" data-timeline="origins">
+              <div class="timeline-buttons" role="tablist" aria-label="Origins timeline">
+                <button class="timeline-button active" data-panel="origins-1896" role="tab" aria-selected="true">1896</button>
+                <button class="timeline-button" data-panel="origins-1929" role="tab" aria-selected="false">1929</button>
+                <button class="timeline-button" data-panel="origins-1950" role="tab" aria-selected="false">1950–51</button>
+              </div>
+              <div class="timeline-panels">
+                <article class="timeline-panel active" id="origins-1896" role="tabpanel">
+                  <h3>First recorded generation</h3>
+                  <p>Electricity generation began in Nigeria in 1896, marking the earliest stage of electrification and the start of a national infrastructure story that would continue across generations.</p>
+                </article>
+                <article class="timeline-panel" id="origins-1929" role="tabpanel">
+                  <h3>The first utility structure</h3>
+                  <p>The Nigerian Electricity Supply Company was established in 1929, representing the first formal utility milestone and an early attempt at organized power delivery.</p>
+                </article>
+                <article class="timeline-panel" id="origins-1950" role="tabpanel">
+                  <h3>National coordination takes shape</h3>
+                  <p>The Electricity Corporation of Nigeria emerged in 1950 and assumed broader responsibility in 1951, signaling a more coordinated framework for generation and distribution.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section" id="development" data-title="National Development">
+        <div class="wall-frame wall-right revealable">
+          <div class="reference-layer ref-development"></div>
+          <div class="wall-content">
+            <div class="section-heading">
+              <p class="eyebrow">Wall 02</p>
+              <h2>National Development</h2>
+              <p class="section-intro">As national ambitions expanded, electricity moved from a limited service into a development instrument. Institutions evolved to serve a larger, more connected Nigeria.</p>
+            </div>
+
+            <div class="split-layout">
+              <div class="story-stack">
+                <div class="story-card glass-card revealable">
+                  <span class="story-year">ECN</span>
+                  <h3>Institutional build-out</h3>
+                  <p>The Electricity Corporation of Nigeria became a central point of coordination, helping shape an organized national supply structure.</p>
+                </div>
+                <div class="story-card glass-card revealable">
+                  <span class="story-year">1972</span>
+                  <h3>NEPA is formed</h3>
+                  <p>ECN and the Niger Dams Authority were merged to form the National Electric Power Authority, consolidating generation and power delivery under one institution.</p>
+                </div>
+              </div>
+
+              <div class="emphasis-panel">
+                <span class="panel-kicker">Development era</span>
+                <h3>From service provision to national utility identity</h3>
+                <p>In this phase, electricity becomes inseparable from modernization, industrial growth, and public service delivery. The corridor wall presents this as a move from fragmented beginnings to national-scale ambition.</p>
+                <div class="pulse-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section" id="reform" data-title="Reform & Unbundling">
+        <div class="wall-frame wall-left revealable">
+          <div class="reference-layer ref-reform"></div>
+          <div class="wall-content">
+            <div class="section-heading">
+              <p class="eyebrow">Wall 03</p>
+              <h2>Reform &amp; Unbundling</h2>
+              <p class="section-intro">The power sector enters a reform era. Policy, law, and market restructuring reshape electricity from a centralized utility model into a multi-actor system.</p>
+            </div>
+
+            <div class="timeline-widget compact" data-timeline="reform">
+              <div class="timeline-buttons" role="tablist" aria-label="Reform timeline">
+                <button class="timeline-button active" data-panel="reform-2001" role="tab" aria-selected="true">2001</button>
+                <button class="timeline-button" data-panel="reform-2005" role="tab" aria-selected="false">2005</button>
+                <button class="timeline-button" data-panel="reform-2013" role="tab" aria-selected="false">2013</button>
+              </div>
+              <div class="timeline-panels">
+                <article class="timeline-panel active" id="reform-2001" role="tabpanel">
+                  <h3>National Electric Power Policy</h3>
+                  <p>The National Electric Power Policy launched a formal reform pathway and set the stage for deeper institutional restructuring.</p>
+                </article>
+                <article class="timeline-panel" id="reform-2005" role="tabpanel">
+                  <h3>EPSR Act and PHCN era</h3>
+                  <p>The Electric Power Sector Reform Act established the legal framework for a restructured electricity market, while PHCN became a transitional institutional vehicle.</p>
+                </article>
+                <article class="timeline-panel" id="reform-2013" role="tabpanel">
+                  <h3>Privatization and unbundling</h3>
+                  <p>Generation and distribution moved into privatized structures, while transmission remained government-owned. The sector framework became more visibly segmented into GENCOs, DISCOs, and TCN.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="entity-band">
+              <span>PHCN</span>
+              <i></i>
+              <span>GENCOs</span>
+              <i></i>
+              <span>DISCOs</span>
+              <i></i>
+              <span>TCN</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section structure-section" id="structure" data-title="Power Sector Structure">
+        <div class="wall-frame wall-right wide revealable">
+          <div class="reference-layer ref-structure"></div>
+          <div class="wall-content">
+            <div class="section-heading">
+              <p class="eyebrow">Wall 04</p>
+              <h2>Power Sector Structure</h2>
+              <p class="section-intro">Click through the system to see how physical power flow and institutional coordination now interact across the market.</p>
+            </div>
+
+            <div class="structure-layout">
+              <div class="diagram-card">
+                <svg class="power-lines" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M178 205 C260 205, 260 205, 340 205"></path>
+                  <path d="M420 205 C500 205, 500 205, 580 205"></path>
+                  <path d="M660 205 C740 205, 740 205, 820 205"></path>
+                  <path class="vertical-path" d="M500 92 C500 120, 500 150, 500 175"></path>
+                  <path class="vertical-path" d="M500 235 C500 270, 500 300, 500 335"></path>
+                </svg>
+
+                <div class="diagram-node node-genco active" data-node="genco" tabindex="0">
+                  <span class="node-label">GENCO</span>
+                  <small>Generate electricity</small>
+                </div>
+                <div class="diagram-node node-tcn" data-node="tcn" tabindex="0">
+                  <span class="node-label">TCN / TSP</span>
+                  <small>Transmission infrastructure</small>
+                </div>
+                <div class="diagram-node node-disco" data-node="disco" tabindex="0">
+                  <span class="node-label">DISCO</span>
+                  <small>Deliver to end users</small>
+                </div>
+                <div class="diagram-node node-market" data-node="market" tabindex="0">
+                  <span class="node-label">Market</span>
+                  <small>Rules, settlement, discipline</small>
+                </div>
+                <div class="diagram-node node-niso" data-node="niso" tabindex="0">
+                  <span class="node-label">NISO</span>
+                  <small>System & market coordination</small>
+                </div>
+              </div>
+
+              <aside class="diagram-info glass-card" id="diagramInfo">
+                <span class="panel-kicker">Interactive system view</span>
+                <h3>Generation companies</h3>
+                <p>Power enters the value chain at the generation level. This section anchors the story in the physical reality of electricity before it moves across transmission and distribution.</p>
+                <ul>
+                  <li>Schedules supply into the grid</li>
+                  <li>Feeds dispatch and balancing decisions</li>
+                  <li>Operates within market and system rules</li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section" id="niso" data-title="Emergence of NISO">
+        <div class="wall-frame wall-left revealable">
+          <div class="reference-layer ref-niso"></div>
+          <div class="wall-content">
+            <div class="section-heading">
+              <p class="eyebrow">Wall 05</p>
+              <h2>Emergence of NISO</h2>
+              <p class="section-intro">The legislative and institutional pivot: a new mandate for system operation, market coordination, grid discipline, and reliability.</p>
+            </div>
+
+            <div class="milestone-grid">
+              <article class="milestone-card glass-card revealable">
+                <span class="milestone-year">08 Jun 2023</span>
+                <h3>Electricity Act assented</h3>
+                <p>The Electricity Act 2023 signaled a decisive shift toward a more decentralized and multi-tiered power market.</p>
+              </article>
+              <article class="milestone-card glass-card revealable">
+                <span class="milestone-year">Dec 2023</span>
+                <h3>TCN split proposed</h3>
+                <p>The federal government signaled plans to separate physical transmission assets from independent system operation.</p>
+              </article>
+              <article class="milestone-card glass-card revealable">
+                <span class="milestone-year">2025</span>
+                <h3>NISO inaugurated</h3>
+                <p>NISO emerged as the independent system operator, taking charge of reliable system and market operations while TCN focuses on infrastructure.</p>
+              </article>
+            </div>
+
+            <div class="mission-ribbon">
+              <span class="mission-label">Institutional role</span>
+              <p>Reliability. Efficiency. Transparency. Coordination. Market discipline. Grid confidence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wall-section executive-section" id="executive" data-title="Executive Wall">
+        <div class="wall-frame wall-center executive-frame revealable">
+          <div class="reference-layer ref-executive"></div>
+          <div class="wall-content executive-content">
+            <p class="eyebrow">Final Wall</p>
+            <div class="executive-wall glass-card">
+              <div class="executive-glow"></div>
+              <p class="executive-kicker">Premium institutional finish</p>
+              <h2 class="acrylic-title">Nigerian Independent System Operator (NISO)</h2>
+              <p class="executive-subtitle">Powering Coordination. Enabling Growth.</p>
+              <div class="pillar-row">
+                <span>Grid Stability</span>
+                <span>Market Integrity</span>
+                <span>Operational Excellence</span>
+                <span>Transparency</span>
+              </div>
+            </div>
+            <p class="closing-note">Designed as an executive-grade immersive concept: restrained, architectural, and future-facing.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Concept walkthrough for executive presentation. Built as a standalone front-end experience with no backend dependencies.</p>
+    </footer>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
