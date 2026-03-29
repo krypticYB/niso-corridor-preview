@@ -54,6 +54,12 @@ const diagramContent = {
   }
 };
 
+// Settle the intro section immediately on load
+const introSection = document.getElementById('intro');
+if (introSection) {
+  setTimeout(() => introSection.classList.add('is-settled'), 100);
+}
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -77,8 +83,17 @@ const sectionObserver = new IntersectionObserver((entries) => {
     });
 
     sections.forEach((section) => {
-      section.classList.toggle('is-current', section.id === currentId);
+      const isCurrent = section.id === currentId;
+      section.classList.toggle('is-current', isCurrent);
+      if (!isCurrent) section.classList.remove('is-settled');
     });
+
+    const currentSection = document.getElementById(currentId);
+    if (currentSection) {
+      setTimeout(() => {
+        currentSection.classList.add('is-settled');
+      }, 200);
+    }
   });
 }, { threshold: 0.55 });
 
