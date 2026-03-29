@@ -3,207 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NISO Legacy Corridor – Interactive Walkthrough</title>
-  <meta name="description" content="An immersive scroll-based walkthrough presenting Nigeria's electricity evolution and NISO's role." />
+  <title>NISO Legacy Corridor — Design Review</title>
+  <meta name="description" content="Executive design review tool for the NISO Legacy Corridor installation. Review each wall deliverable and approve mobilization." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <div class="site-shell">
     <div class="ambient-grid"></div>
-    <div class="ambient-noise"></div>
     <div class="corridor-shell" aria-hidden="true">
       <div class="corridor-topbar">
-        <span class="topbar-label">NISO Legacy Corridor</span>
+        <span class="topbar-logo">NISO</span>
         <span class="topbar-divider"></span>
-        <span class="topbar-value" id="activeSectionLabel">Corridor Entry</span>
+        <span class="topbar-label">Legacy Corridor</span>
+        <span class="topbar-divider"></span>
+        <span class="topbar-value" id="activeSectionLabel">Design Review</span>
       </div>
       <div class="corridor-line"></div>
-      <div class="corridor-walls corridor-left"></div>
-      <div class="corridor-walls corridor-right"></div>
-      <div class="light-pool light-pool-a"></div>
-      <div class="light-pool light-pool-b"></div>
     </div>
 
     <nav class="section-nav" aria-label="Section navigation">
       <a href="#intro" class="section-dot active" data-nav="intro"><span>Entry</span></a>
-      <a href="#before-after" class="section-dot" data-nav="before-after"><span>The Space</span></a>
-      <a href="#origins" class="section-dot" data-nav="origins"><span>Origins</span></a>
-      <a href="#development" class="section-dot" data-nav="development"><span>Development</span></a>
-      <a href="#reform" class="section-dot" data-nav="reform"><span>Reform</span></a>
-      <a href="#structure" class="section-dot" data-nav="structure"><span>Structure</span></a>
-      <a href="#niso" class="section-dot" data-nav="niso"><span>NISO</span></a>
-      <a href="#readiness" class="section-dot" data-nav="readiness"><span>Delivery</span></a>
-      <a href="#executive" class="section-dot" data-nav="executive"><span>Executive Wall</span></a>
+      <a href="#wall01" class="section-dot" data-nav="wall01"><span>Wall 01</span></a>
+      <a href="#wall02" class="section-dot" data-nav="wall02"><span>Wall 02</span></a>
+      <a href="#wall03" class="section-dot" data-nav="wall03"><span>Wall 03</span></a>
+      <a href="#wall04" class="section-dot" data-nav="wall04"><span>Wall 04</span></a>
+      <a href="#wall05" class="section-dot" data-nav="wall05"><span>Wall 05</span></a>
+      <a href="#wall06" class="section-dot" data-nav="wall06"><span>Wall 06</span></a>
+      <a href="#readiness" class="section-dot" data-nav="readiness"><span>Readiness</span></a>
     </nav>
 
     <main>
-      <section class="wall-section hero-section is-current" id="intro" data-title="Corridor Entry">
-        <div class="wall-frame wall-center">
-          <div class="reference-layer ref-intro"></div>
+
+      <!-- ─── ENTRY ─── -->
+      <section class="wall-section hero-section is-current" id="intro" data-title="Design Review">
+        <div class="wall-frame wall-center revealable">
           <div class="wall-content hero-content">
-            <p class="eyebrow">Interactive Walkthrough</p>
-            <h1>NISO Legacy Corridor</h1>
-            <p class="hero-subtitle">A scroll-based concept experience simulating a walk through institutional memory, from the earliest sparks of electricity in Nigeria to the emergence of the Nigerian Independent System Operator.</p>
+            <p class="eyebrow">Executive Design Review — For Approval</p>
+            <h1>NISO<br>Legacy<br>Corridor</h1>
+            <p class="hero-subtitle">A permanent institutional installation transforming NISO's corridor into a curated record of Nigeria's electricity history — and NISO's place within it. This tool presents each wall as a defined deliverable for MD review and mobilization approval.</p>
             <div class="hero-metrics">
               <div class="metric-card">
-                <span class="metric-value">7</span>
-                <span class="metric-label">Corridor walls</span>
+                <span class="metric-value">6</span>
+                <span class="metric-label">Wall deliverables</span>
               </div>
               <div class="metric-card">
                 <span class="metric-value">130+</span>
-                <span class="metric-label">Years of power history</span>
+                <span class="metric-label">Years of documented history</span>
               </div>
               <div class="metric-card">
-                <span class="metric-value">2023+</span>
-                <span class="metric-label">New legislative mandate</span>
+                <span class="metric-value">8–10</span>
+                <span class="metric-label">Days to full installation</span>
               </div>
             </div>
-            <div class="hero-quote glass-card">
-              <span class="quote-kicker">Narrative intent</span>
-              <p>Transforming circulation space into a curated journey of authority, continuity, coordination, and national progress.</p>
+            <div class="hero-quote">
+              <span class="quote-kicker">Decision required</span>
+              <p>Approve the design and release mobilization funds. Walk each wall, review installation intent, and confirm readiness to proceed.</p>
             </div>
-            <a class="scroll-invite" href="#before-after">Begin the walkthrough</a>
+            <a class="scroll-invite" href="#wall01">Review Wall 01</a>
           </div>
         </div>
       </section>
 
-      <section class="wall-section before-after-section" id="before-after" data-title="The Space">
-        <div class="wall-frame wall-center">
+      <!-- ─── WALL 01 ─── -->
+      <section class="wall-section" id="wall01" data-title="Wall 01 — Origins of Electricity">
+        <div class="wall-frame wall-left revealable">
           <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">SITE SURVEY</span>
-              <span class="wall-location">6th Floor, NISO Wing — Plaza Corridor</span>
-              <span class="wall-purpose">~82m² available surface area</span>
-            </div>
-            <div class="section-heading">
-              <p class="eyebrow">The Physical Space</p>
-              <h2>From bare walls to institutional memory</h2>
-              <p class="section-intro">The corridor runs the full length of the NISO wing — from the lift lobby to the MD's office. Every surface is an opportunity. What follows is a structured plan to transform this space.</p>
-            </div>
-            <div class="corridor-compare" id="corridorCompare">
-              <!-- BEFORE: bare corridor -->
-              <div class="compare-base">
-                <img src="assets/img/corridor-actual-05.jpg" alt="Current corridor — bare white walls" />
-                <div class="compare-badge before-badge">Before</div>
+            <div class="wall-id-band">
+              <span class="wall-number">01</span>
+              <div class="wall-meta">
+                <p class="wall-title-label">Origins of Electricity</p>
+                <p class="wall-location">📍 Corridor entry — first wall visible on approach</p>
+                <p class="wall-purpose">Establishes the scientific foundation of electricity, from Franklin (1752) to Tesla (1888), grounding the Nigerian story within a global legacy of discovery.</p>
               </div>
-              <!-- AFTER: simulated installation -->
-              <div class="compare-overlay" id="compareOverlay" style="--clip:50%">
-                <div class="compare-photo-wrap">
-                  <img src="assets/img/corridor-actual-05.jpg" alt="Corridor with proposed installation" />
-                  <div class="sim-tint"></div>
-                  <div class="sim-panel sim-left">
-                    <span class="sim-eyebrow">Wall 01 · Origins</span>
-                    <span class="sim-title">1896–1972</span>
-                    <span class="sim-body">Nigeria's electricity story begins in colonial Lagos — from a single generating plant at Marina to a national statutory authority.</span>
-                    <div class="sim-led"></div>
-                  </div>
-                  <div class="sim-panel sim-right">
-                    <span class="sim-eyebrow">Wall 05 · NISO</span>
-                    <span class="sim-title">2023</span>
-                    <span class="sim-body">Institutional separation of system operation — independence, neutrality, and a new mandate for Nigeria's grid.</span>
-                    <div class="sim-led"></div>
-                  </div>
-                  <div class="sim-floor-glow"></div>
-                </div>
-                <div class="compare-badge after-badge">Proposed</div>
-              </div>
-              <!-- Draggable divider -->
-              <div class="compare-divider" id="compareDivider" style="left:50%">
-                <div class="divider-track"></div>
-                <button class="divider-grip" aria-label="Drag to compare before and after">
-                  <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="13,8 7,16 13,24"/>
-                    <polyline points="19,8 25,16 19,24"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="install-spec glass-card revealable">
-              <span class="panel-kicker">Installation Specification</span>
-              <div class="spec-row">
-                <div class="spec-item"><span class="spec-label">Surface Treatment</span><span class="spec-value">Gypsum board on concealed metal framing</span></div>
-                <div class="spec-item"><span class="spec-label">Visual Finish</span><span class="spec-value">Printed panels + acrylic lettering (5–10mm)</span></div>
-                <div class="spec-item"><span class="spec-label">Lighting</span><span class="spec-value">Integrated LED strip — accent and ambient</span></div>
-                <div class="spec-item"><span class="spec-label">Coverage</span><span class="spec-value">~82m² subject to final site verification</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="wall-section" id="origins" data-title="Origins of Electricity in Nigeria">
-        <div class="wall-frame wall-left">
-          <div class="reference-layer ref-history"></div>
-          <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">WALL 01</span>
-              <span class="wall-location">Entry Corridor — Left Wing</span>
-              <span class="wall-purpose">Historical Foundation</span>
-            </div>
-            <div class="section-heading">
-              <p class="eyebrow">Wall 01 — Origins</p>
-              <h2>Origins of Electricity in Nigeria</h2>
-              <p class="section-intro">The story begins in colonial Lagos. From a single generating plant on Marina Street to a statutory national framework — the foundation of Nigeria's electricity infrastructure was laid over five decades.</p>
             </div>
 
             <div class="timeline-widget" data-timeline="origins">
               <div class="timeline-buttons" role="tablist" aria-label="Origins timeline">
-                <button class="timeline-button active" data-panel="origins-1896" role="tab" aria-selected="true">1896</button>
-                <button class="timeline-button" data-panel="origins-1950" role="tab" aria-selected="false">1950</button>
-                <button class="timeline-button" data-panel="origins-1962" role="tab" aria-selected="false">1962</button>
+                <button class="timeline-button active" data-panel="o-1752" role="tab" aria-selected="true">1752</button>
+                <button class="timeline-button" data-panel="o-1800" role="tab" aria-selected="false">1800–31</button>
+                <button class="timeline-button" data-panel="o-1879" role="tab" aria-selected="false">1879–88</button>
               </div>
               <div class="timeline-panels">
-                <article class="timeline-panel active" id="origins-1896" role="tabpanel">
-                  <h3>First electric supply in Nigeria</h3>
-                  <p>Electricity was introduced in Lagos in 1896 by the colonial Public Works Department. A small generating plant at Marina powered streetlights and government offices. Access was limited and primarily served colonial administration. This marked the birth of electricity in Nigeria.</p>
+                <article class="timeline-panel active" id="o-1752" role="tabpanel">
+                  <h3>Benjamin Franklin — Understanding Nature's Power</h3>
+                  <p>Franklin's 1752 kite experiment demonstrated that lightning is electrical. His work introduced the concept of positive and negative charges and opened the field of scientific electrical inquiry.</p>
                 </article>
-                <article class="timeline-panel" id="origins-1950" role="tabpanel">
-                  <h3>A national electricity framework</h3>
-                  <p>The Electricity Corporation of Nigeria (ECN) was established under Ordinance No. 15 of 1950. For the first time, electricity generation and distribution were organized under a statutory national framework. Power supply began expanding beyond Lagos into other regions.</p>
+                <article class="timeline-panel" id="o-1800" role="tabpanel">
+                  <h3>Volta, Ohm & Faraday — The Building Blocks</h3>
+                  <p>Volta's 1800 voltaic pile produced the first continuous current. Ohm formalized circuit mathematics in 1827. Faraday's 1831 discovery of electromagnetic induction led directly to the electric generator.</p>
                 </article>
-                <article class="timeline-panel" id="origins-1962" role="tabpanel">
-                  <h3>Harnessing hydropower</h3>
-                  <p>The Niger Dams Authority (NDA) was established under the Niger Dams Act of 1962. It led to the construction of the Kainji Dam — completed 1968 — making hydropower a cornerstone of Nigeria's electricity supply.</p>
+                <article class="timeline-panel" id="o-1879" role="tabpanel">
+                  <h3>Edison & Tesla — Powering the Modern World</h3>
+                  <p>Edison commercialized the light bulb and built the first power stations in 1879. Tesla and Westinghouse's AC transmission system (1888) made long-distance electricity delivery possible — the foundation of every modern grid.</p>
                 </article>
               </div>
+            </div>
+
+            <div class="install-block">
+              <span class="install-kicker">Content for this wall</span>
+              <ul>
+                <li>Portrait panels: Franklin, Volta, Ohm, Faraday, Edison, Tesla</li>
+                <li>Timeline band spanning 1752 to 1888</li>
+                <li>Section headline: <em>"From Lightning to Current — The Science Behind the Grid"</em></li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="wall-section" id="development" data-title="National Development">
-        <div class="wall-frame wall-right">
-          <div class="reference-layer ref-development"></div>
+      <!-- ─── WALL 02 ─── -->
+      <section class="wall-section" id="wall02" data-title="Wall 02 — Electricity Arrives in Nigeria">
+        <div class="wall-frame wall-right revealable">
           <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">WALL 02</span>
-              <span class="wall-location">Entry Corridor — Right Wing</span>
-              <span class="wall-purpose">Institutional Build-Out</span>
-            </div>
-            <div class="section-heading">
-              <p class="eyebrow">Wall 02 — Development</p>
-              <h2>National Development</h2>
-              <p class="section-intro">As national ambitions expanded, electricity moved from a limited colonial service into a development instrument. ECN and NDA merged into a single national authority — consolidating generation, transmission, and distribution under one institution.</p>
+            <div class="wall-id-band">
+              <span class="wall-number">02</span>
+              <div class="wall-meta">
+                <p class="wall-title-label">Electricity Arrives in Nigeria</p>
+                <p class="wall-location">📍 Corridor — second panel, left side</p>
+                <p class="wall-purpose">Documents the introduction of electricity to Nigeria from 1896 through the establishment of the national framework in 1950, marking the transition from colonial provision to statutory governance.</p>
+              </div>
             </div>
 
             <div class="split-layout">
               <div class="story-stack">
-                <div class="story-card glass-card revealable">
-                  <span class="story-year">ECN</span>
-                  <h3>Institutional build-out</h3>
-                  <p>The Electricity Corporation of Nigeria became a central point of coordination, helping shape an organized national supply structure.</p>
+                <div class="story-card revealable">
+                  <span class="story-year">1896</span>
+                  <h3>First electric supply in Nigeria</h3>
+                  <p>Electricity was introduced in Lagos by the colonial Public Works Department. A generating plant at Marina powered streetlights and government offices — the birth of electricity in Nigeria.</p>
                 </div>
-                <div class="story-card glass-card revealable">
-                  <span class="story-year">1972</span>
-                  <h3>NEPA is formed</h3>
-                  <p>ECN and the Niger Dams Authority were merged to form the National Electric Power Authority, consolidating generation and power delivery under one institution.</p>
+                <div class="story-card revealable">
+                  <span class="story-year">1950</span>
+                  <h3>Electricity Corporation of Nigeria</h3>
+                  <p>ECN was established under Ordinance No. 15 of 1950 — the first statutory national framework for electricity generation and distribution. Power supply began expanding beyond Lagos into the regions.</p>
                 </div>
               </div>
 
               <div class="emphasis-panel">
-                <span class="panel-kicker">Development era</span>
-                <h3>From service provision to national utility identity</h3>
-                <p>In this phase, electricity becomes inseparable from modernization, industrial growth, and public service delivery. The corridor wall presents this as a move from fragmented beginnings to national-scale ambition.</p>
+                <span class="panel-kicker">Wall narrative</span>
+                <h3>From colonial provision to national institution</h3>
+                <p>Fifty-four years separate a streetlamp at Marina from a national electricity ordinance. This wall presents that transition as the first act of Nigeria's electricity story.</p>
                 <div class="pulse-line"></div>
               </div>
             </div>
@@ -211,224 +152,293 @@
         </div>
       </section>
 
-      <section class="wall-section" id="reform" data-title="Reform & Unbundling">
-        <div class="wall-frame wall-left">
-          <div class="reference-layer ref-reform"></div>
+      <!-- ─── WALL 03 ─── -->
+      <section class="wall-section" id="wall03" data-title="Wall 03 — National Development & NEPA">
+        <div class="wall-frame wall-left revealable">
           <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">WALL 03</span>
-              <span class="wall-location">Mid Corridor — Left Wing</span>
-              <span class="wall-purpose">Reform &amp; Market Structure</span>
+            <div class="wall-id-band">
+              <span class="wall-number">03</span>
+              <div class="wall-meta">
+                <p class="wall-title-label">National Development & NEPA</p>
+                <p class="wall-location">📍 Corridor — mid-section, spanning full wall width</p>
+                <p class="wall-purpose">Covers the infrastructure build-out era: the Niger Dams Authority, Kainji Dam, and the 1972 formation of NEPA as a vertically integrated national monopoly.</p>
+              </div>
             </div>
-            <div class="section-heading">
-              <p class="eyebrow">Wall 03 — Reform</p>
-              <h2>Reform &amp; Unbundling</h2>
-              <p class="section-intro">The EPSR Act 2005 dismantled the state monopoly and created a regulated multi-actor market. Generation, transmission, and distribution became distinct institutional functions for the first time.</p>
+
+            <div class="timeline-widget compact" data-timeline="nepa">
+              <div class="timeline-buttons" role="tablist" aria-label="Development timeline">
+                <button class="timeline-button active" data-panel="n-1962" role="tab" aria-selected="true">1962</button>
+                <button class="timeline-button" data-panel="n-1968" role="tab" aria-selected="false">1968</button>
+                <button class="timeline-button" data-panel="n-1972" role="tab" aria-selected="false">1972</button>
+              </div>
+              <div class="timeline-panels">
+                <article class="timeline-panel active" id="n-1962" role="tabpanel">
+                  <h3>Niger Dams Authority established</h3>
+                  <p>The NDA was created under the Niger Dams Act of 1962, signaling Nigeria's commitment to large-scale hydropower infrastructure as a national development priority.</p>
+                </article>
+                <article class="timeline-panel" id="n-1968" role="tabpanel">
+                  <h3>Kainji Dam completed</h3>
+                  <p>Completed in 1968, the Kainji Dam became the cornerstone of Nigeria's electricity supply — hydropower at national scale, serving as a physical symbol of post-independence ambition.</p>
+                </article>
+                <article class="timeline-panel" id="n-1972" role="tabpanel">
+                  <h3>NEPA — National Electric Power Authority</h3>
+                  <p>ECN and NDA were merged under the NEPA Act in 1972. NEPA became a vertically integrated monopoly responsible for generation, transmission, and distribution nationwide under central control.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="install-block">
+              <span class="install-kicker">Installation details — Wall 03</span>
+              <ul>
+                <li><strong>Format:</strong> Large-format printed panel on 5mm foam board, mounted flush to wall</li>
+                <li><strong>Dimensions:</strong> Full corridor wall width × 2.1m height</li>
+                <li><strong>Finish:</strong> Matte laminate with UV coating for longevity</li>
+                <li><strong>Elements:</strong> Timeline band, Kainji Dam imagery, NEPA institutional logo, era headings in Roboto Condensed Bold</li>
+                <li><strong>Brand application:</strong> Casal (#3B6065) as section anchor colour; Summer Green (#87B8A3) for timeline nodes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── WALL 04 ─── -->
+      <section class="wall-section" id="wall04" data-title="Wall 04 — Reform & Unbundling">
+        <div class="wall-frame wall-right revealable">
+          <div class="wall-content">
+            <div class="wall-id-band">
+              <span class="wall-number">04</span>
+              <div class="wall-meta">
+                <p class="wall-title-label">Reform & Unbundling</p>
+                <p class="wall-location">📍 Corridor — right side, approaching the main office zone</p>
+                <p class="wall-purpose">Documents the structural dismantling of the NEPA monopoly — the EPSR Act 2005, creation of NERC, formation of GenCos and DisCos, and the 2013 privatization that created the modern NESI.</p>
+              </div>
             </div>
 
             <div class="timeline-widget compact" data-timeline="reform">
               <div class="timeline-buttons" role="tablist" aria-label="Reform timeline">
-                <button class="timeline-button active" data-panel="reform-2001" role="tab" aria-selected="true">2001</button>
-                <button class="timeline-button" data-panel="reform-2005" role="tab" aria-selected="false">2005</button>
-                <button class="timeline-button" data-panel="reform-2013" role="tab" aria-selected="false">2013</button>
+                <button class="timeline-button active" data-panel="r-2005" role="tab" aria-selected="true">2005</button>
+                <button class="timeline-button" data-panel="r-2013" role="tab" aria-selected="false">2013</button>
               </div>
               <div class="timeline-panels">
-                <article class="timeline-panel active" id="reform-2001" role="tabpanel">
-                  <h3>National Electric Power Policy</h3>
-                  <p>The National Electric Power Policy launched a formal reform pathway and set the stage for deeper institutional restructuring.</p>
+                <article class="timeline-panel active" id="r-2005" role="tabpanel">
+                  <h3>EPSR Act 2005 — Restructuring the sector</h3>
+                  <p>The Electric Power Sector Reform Act unbundled NEPA and created NERC, Generation Companies, Distribution Companies, TCN, and NBET. PHCN was established as the transitional structure toward privatization.</p>
                 </article>
-                <article class="timeline-panel" id="reform-2005" role="tabpanel">
-                  <h3>EPSR Act and PHCN era</h3>
-                  <p>The Electric Power Sector Reform Act established the legal framework for a restructured electricity market, while PHCN became a transitional institutional vehicle.</p>
-                </article>
-                <article class="timeline-panel" id="reform-2013" role="tabpanel">
-                  <h3>Privatization and unbundling</h3>
-                  <p>Generation and distribution moved into privatized structures, while transmission remained government-owned. The sector framework became more visibly segmented into GENCOs, DISCOs, and TCN.</p>
+                <article class="timeline-panel" id="r-2013" role="tabpanel">
+                  <h3>Privatization — 1 November 2013</h3>
+                  <p>PHCN successor companies were privatized. Nigeria transitioned from a state monopoly to a structured market: independent GenCos, a government-owned TCN, privatized DisCos, and a regulated electricity market — the birth of the modern NESI.</p>
                 </article>
               </div>
             </div>
 
             <div class="entity-band">
-              <span>PHCN</span>
+              <span>NERC</span>
               <i></i>
-              <span>GENCOs</span>
+              <span>GenCos</span>
               <i></i>
-              <span>DISCOs</span>
+              <span>DisCos</span>
               <i></i>
               <span>TCN</span>
+              <i></i>
+              <span>NBET</span>
+            </div>
+
+            <div class="install-block">
+              <span class="install-kicker">Installation details — Wall 04</span>
+              <ul>
+                <li><strong>Format:</strong> Split-panel layout — two large boards with a connecting graphic element</li>
+                <li><strong>Dimensions:</strong> Two panels at 1.2m × 2.0m each, mounted side by side with 40mm gap</li>
+                <li><strong>Finish:</strong> Satin laminate; entity labels as individual cut-out vinyl lettering</li>
+                <li><strong>Elements:</strong> Reform timeline, entity structure diagram (NERC / GenCos / DisCos / TCN), legislative seal</li>
+                <li><strong>Brand application:</strong> Charcoal Grey (#414042) structural backdrop; Summer Green nodes for each entity</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="wall-section structure-section" id="structure" data-title="Power Sector Structure">
-        <div class="wall-frame wall-right wide">
-          <div class="reference-layer ref-structure"></div>
+      <!-- ─── WALL 05 — NISO (CLIMAX) ─── -->
+      <section class="wall-section niso-section" id="wall05" data-title="Wall 05 — The Emergence of NISO">
+        <div class="wall-frame wall-left wide revealable">
           <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">WALL 04</span>
-              <span class="wall-location">Mid Corridor — Right Wing</span>
-              <span class="wall-purpose">Sector Architecture</span>
-            </div>
-            <div class="section-heading">
-              <p class="eyebrow">Wall 04 — Structure</p>
-              <h2>Power Sector Structure</h2>
-              <p class="section-intro">The Nigerian Electricity Supply Industry operates as a coordinated multi-actor system. Each node has a defined role — and NISO sits at the coordination centre.</p>
-            </div>
-
-            <div class="structure-layout">
-              <div class="diagram-card">
-                <svg class="power-lines" viewBox="0 0 1000 420" preserveAspectRatio="none" aria-hidden="true">
-                  <path d="M178 205 C260 205, 260 205, 340 205"></path>
-                  <path d="M420 205 C500 205, 500 205, 580 205"></path>
-                  <path d="M660 205 C740 205, 740 205, 820 205"></path>
-                  <path class="vertical-path" d="M500 92 C500 120, 500 150, 500 175"></path>
-                  <path class="vertical-path" d="M500 235 C500 270, 500 300, 500 335"></path>
-                </svg>
-
-                <div class="diagram-node node-genco active" data-node="genco" tabindex="0">
-                  <span class="node-label">GENCO</span>
-                  <small>Generate electricity</small>
-                </div>
-                <div class="diagram-node node-tcn" data-node="tcn" tabindex="0">
-                  <span class="node-label">TCN / TSP</span>
-                  <small>Transmission infrastructure</small>
-                </div>
-                <div class="diagram-node node-disco" data-node="disco" tabindex="0">
-                  <span class="node-label">DISCO</span>
-                  <small>Deliver to end users</small>
-                </div>
-                <div class="diagram-node node-market" data-node="market" tabindex="0">
-                  <span class="node-label">Market</span>
-                  <small>Rules, settlement, discipline</small>
-                </div>
-                <div class="diagram-node node-niso" data-node="niso" tabindex="0">
-                  <span class="node-label">NISO</span>
-                  <small>System & market coordination</small>
-                </div>
+            <div class="wall-id-band climax-band">
+              <span class="wall-number accent-number">05</span>
+              <div class="wall-meta">
+                <p class="wall-title-label accent-title">The Emergence of NISO</p>
+                <p class="wall-location">📍 Corridor — centrepiece wall, maximum dwell point</p>
+                <p class="wall-purpose">The institutional climax of the corridor. This wall presents NISO's mandate, legislative basis, and functional separation from TCN — the moment Nigeria's electricity system gained an independent operator.</p>
               </div>
-
-              <aside class="diagram-info glass-card" id="diagramInfo">
-                <span class="panel-kicker">Interactive system view</span>
-                <h3>Generation companies</h3>
-                <p>Power enters the value chain at the generation level. This section anchors the story in the physical reality of electricity before it moves across transmission and distribution.</p>
-                <ul>
-                  <li>Schedules supply into the grid</li>
-                  <li>Feeds dispatch and balancing decisions</li>
-                  <li>Operates within market and system rules</li>
-                </ul>
-              </aside>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="wall-section" id="niso" data-title="Emergence of NISO">
-        <div class="wall-frame wall-left">
-          <div class="reference-layer ref-niso"></div>
-          <div class="wall-content">
-            <div class="wall-tag">
-              <span class="wall-number">WALL 05</span>
-              <span class="wall-location">End Corridor — Approaching MD's Office</span>
-              <span class="wall-purpose">Institutional Identity &amp; Authority</span>
-            </div>
-            <div class="section-heading">
-              <p class="eyebrow">Wall 05 — The Birth of NISO</p>
-              <h2>Emergence of NISO</h2>
-              <p class="section-intro">For the first time in Nigeria's electricity history, system operation was institutionally separated from transmission ownership. A structural shift toward neutrality, transparency, and enhanced grid reliability.</p>
+            <div class="niso-statement revealable">
+              <span class="panel-kicker">Why this wall matters</span>
+              <p class="statement-text">Every wall before this one describes inheritance. This wall describes transformation. NISO is not a continuation of what came before — it is a structural shift: system operation separated from asset ownership, market neutrality institutionalized, and grid reliability made an independent mandate. For the first time in Nigeria's electricity history, no single entity controls both the infrastructure and the operations. That is the significance of this wall.</p>
             </div>
 
             <div class="milestone-grid">
-              <article class="milestone-card glass-card revealable">
-                <span class="milestone-year">2023</span>
+              <article class="milestone-card revealable">
+                <span class="milestone-year">2023 Act</span>
                 <h3>Electricity Act 2023</h3>
-                <p>The Electricity Act 2023 repealed the EPSR Act and introduced a more liberalized electricity framework — providing for functional separation of transmission and system operation, and decentralization allowing states to generate and distribute electricity.</p>
+                <p>Repealed the EPSR Act. Provided for functional separation of transmission and system operation, and established the legal basis for NISO as an independent entity.</p>
               </article>
-              <article class="milestone-card glass-card revealable">
-                <span class="milestone-year">2023</span>
-                <h3>NISO established</h3>
-                <p>Under the Electricity Act 2023, NISO was created to independently manage System Operations, Market Operations, grid reliability, and transparent market settlement.</p>
+              <article class="milestone-card revealable">
+                <span class="milestone-year">Mandate</span>
+                <h3>Four independent functions</h3>
+                <p>System Operations. Market Operations. Grid reliability and stability. Transparent market settlement. All four institutionally separated from transmission ownership for the first time.</p>
               </article>
-              <article class="milestone-card glass-card revealable">
+              <article class="milestone-card revealable">
                 <span class="milestone-year">Today</span>
-                <h3>Operational independence</h3>
-                <p>NISO stands at the centre of Nigeria's electricity transformation — ensuring power flows reliably, markets operate transparently, and the grid remains stable for generations to come.</p>
+                <h3>NISO operational</h3>
+                <p>NISO stands at the coordination layer of Nigeria's modern electricity market — ensuring power flows reliably, markets operate transparently, and the grid remains stable.</p>
               </article>
             </div>
 
             <div class="mission-ribbon">
-              <span class="mission-label">Mandate</span>
-              <p>System Operations &nbsp;·&nbsp; Market Operations &nbsp;·&nbsp; Grid Reliability &nbsp;·&nbsp; Market Transparency</p>
+              <span class="mission-label">NISO institutional mandate</span>
+              <p>Reliability — Neutrality — Transparency — Market Discipline — Grid Confidence</p>
+            </div>
+
+            <div class="install-block install-block-niso">
+              <span class="install-kicker">Installation details — Wall 05</span>
+              <ul>
+                <li><strong>Format:</strong> Premium 3-panel feature wall — the largest installation in the corridor</li>
+                <li><strong>Dimensions:</strong> Full wall span × 2.4m height; centre panel raised with 10mm standoff mount</li>
+                <li><strong>Finish:</strong> Gloss laminate on centre panel; matte flanking panels for contrast</li>
+                <li><strong>Elements:</strong> NISO logo at scale, Electricity Act 2023 reference, four-mandate diagram, founding statement in Roboto Condensed Black</li>
+                <li><strong>Brand application:</strong> Full NISO Summer Green (#87B8A3) anchor colour; Casal (#3B6065) as depth layer; white Roboto Condensed typography throughout</li>
+                <li><strong>Special finish:</strong> NISO institutional mark embossed or printed on brushed substrate panel at eye level</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ─── WALL 06 — EXECUTIVE WALL ─── -->
+      <section class="wall-section executive-section" id="wall06" data-title="Wall 06 — Executive Wall">
+        <div class="wall-frame wall-center executive-frame revealable">
+          <div class="wall-content executive-content">
+            <div class="wall-id-band wall-id-centered">
+              <span class="wall-number">06</span>
+              <div class="wall-meta">
+                <p class="wall-title-label">Executive Identity Wall</p>
+                <p class="wall-location">📍 Corridor terminus — reception-facing or MD suite approach</p>
+                <p class="wall-purpose">The corridor closes on institutional authority. No narrative — only NISO's identity, mandate pillars, and founding declaration at architectural scale.</p>
+              </div>
+            </div>
+
+            <div class="executive-wall">
+              <div class="executive-glow"></div>
+              <p class="executive-kicker">Wall 06 — Executive Identity Installation</p>
+              <h2 class="acrylic-title">Nigerian Independent System Operator</h2>
+              <p class="executive-subtitle">Coordinating Power. Enabling Growth. Securing the Grid.</p>
+              <div class="pillar-row">
+                <span>Grid Stability</span>
+                <span>Market Integrity</span>
+                <span>Operational Excellence</span>
+                <span>Transparency</span>
+              </div>
+            </div>
+
+            <div class="install-block install-centered">
+              <span class="install-kicker">Installation details — Wall 06</span>
+              <ul>
+                <li><strong>Format:</strong> Single premium mounted board, architectural grade</li>
+                <li><strong>Dimensions:</strong> 2.4m × 1.6m centred on wall; 15mm standoff aluminium mount</li>
+                <li><strong>Finish:</strong> Brushed substrate with gloss UV spot-varnish on NISO mark and headline</li>
+                <li><strong>Typography:</strong> Roboto Condensed Black at display scale; pillar tags in Roboto Light</li>
+                <li><strong>Brand application:</strong> Casal (#3B6065) full-bleed background; NISO white identity mark; gold accent line below headline</li>
+              </ul>
+            </div>
+
+            <p class="closing-note">The corridor begins with a discovery in 1752. It ends with an institution built to govern Nigeria's electricity future. Every wall between is the proof of that journey.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── EXECUTION READINESS ─── -->
       <section class="wall-section readiness-section" id="readiness" data-title="Execution Readiness">
-        <div class="wall-frame wall-center">
+        <div class="wall-frame wall-center revealable">
           <div class="wall-content">
             <div class="section-heading">
-              <p class="eyebrow">Delivery Plan</p>
+              <p class="eyebrow">Final Section — For MD Approval</p>
               <h2>Execution Readiness</h2>
-              <p class="section-intro">Design is complete. Survey is done. Team is on standby. This project can commence immediately upon approval.</p>
+              <p class="section-intro">Design is finalized. Content is confirmed. The team is ready to proceed immediately upon mobilization approval.</p>
             </div>
+
             <div class="readiness-grid">
-              <div class="readiness-card glass-card revealable">
-                <span class="readiness-phase">Phase 1</span>
-                <h3>Design Finalisation</h3>
-                <p>Content review, layout approval, print-ready artwork preparation.</p>
-                <span class="readiness-duration">Day 1</span>
+              <div class="readiness-phase revealable">
+                <span class="phase-number">01</span>
+                <div class="phase-body">
+                  <h3>Design Finalization</h3>
+                  <span class="phase-duration">2–3 days</span>
+                  <p>Final layout files prepared for each wall. Brand compliance confirmed. Content signed off against approved wording. Print-ready artwork submitted to fabricator.</p>
+                </div>
               </div>
-              <div class="readiness-card glass-card revealable">
-                <span class="readiness-phase">Phase 2</span>
-                <h3>Fabrication</h3>
-                <p>Panel production, acrylic cutting and finishing, LED strip preparation.</p>
-                <span class="readiness-duration">Days 2–3</span>
+              <div class="readiness-phase revealable">
+                <span class="phase-number">02</span>
+                <div class="phase-body">
+                  <h3>Fabrication</h3>
+                  <span class="phase-duration">3–4 days</span>
+                  <p>Large-format printing on specified substrates. Lamination and UV coating applied. Mounting hardware fabricated. All panels labelled and staged by wall number for installation sequencing.</p>
+                </div>
               </div>
-              <div class="readiness-card glass-card revealable">
-                <span class="readiness-phase">Phase 3</span>
-                <h3>Installation</h3>
-                <p>On-site fixing, alignment, lighting integration, finishing and handover.</p>
-                <span class="readiness-duration">Days 4–5</span>
+              <div class="readiness-phase revealable">
+                <span class="phase-number">03</span>
+                <div class="phase-body">
+                  <h3>Installation</h3>
+                  <span class="phase-duration">2–3 days</span>
+                  <p>On-site installation by professional team. Wall-by-wall sequencing from Wall 01 to Wall 06. Final QC walkthrough with client representative. Corridor handed over complete.</p>
+                </div>
               </div>
             </div>
-            <div class="readiness-close glass-card">
-              <p class="readiness-statement">Total delivery: <strong>5 working days from approval.</strong> Site survey is complete. We are ready to commence immediately.</p>
+
+            <div class="readiness-summary revealable">
+              <div class="summary-inner">
+                <span class="panel-kicker">Total programme</span>
+                <p class="summary-timeline">8–10 working days from mobilization to handover</p>
+                <p class="summary-statement">The design is ready. The content is approved. The corridor is prepared. Upon release of mobilization funds, work commences within 24 hours.</p>
+                <div class="approval-strip">
+                  <span>Awaiting MD Approval</span>
+                  <span class="approval-arrow">→ Mobilization Release</span>
+                  <span class="approval-arrow">→ Day 1 Commencement</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="wall-section executive-section" id="executive" data-title="Executive Wall">
-        <div class="wall-frame wall-center executive-frame">
-          <div class="reference-layer ref-executive"></div>
-          <div class="wall-content executive-content">
-            <div class="wall-tag wall-tag-light">
-              <span class="wall-number">EXECUTIVE WALL</span>
-              <span class="wall-location">MD's Office Entrance — Feature Wall</span>
-              <span class="wall-purpose">Acrylic Panel · Premium Finish · Integrated Lighting</span>
-            </div>
-            <div class="executive-wall glass-card">
-              <div class="executive-glow"></div>
-              <p class="executive-kicker">From Franklin's kite to Nigeria's grid</p>
-              <h2 class="acrylic-title">Nigerian Independent System Operator</h2>
-              <p class="executive-subtitle">What began as a scientific curiosity became a global infrastructure.<br>What started in colonial Lagos evolved into a national grid.<br>What was once centrally controlled has transformed into an independent, regulated market.</p>
-              <div class="pillar-row">
-                <span>Grid Reliability</span>
-                <span>Market Transparency</span>
-                <span>System Independence</span>
-                <span>National Progress</span>
-              </div>
-            </div>
-            <p class="closing-note">Today, NISO stands at the centre of Nigeria's electricity transformation — ensuring power flows reliably, markets operate transparently, and the grid remains stable for generations to come.</p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
-      <p>Concept walkthrough for executive presentation. Built as a standalone front-end experience with no backend dependencies.</p>
+      <p>NISO Legacy Corridor — Executive Design Review. Prepared by Quadrant Global. Confidential — for internal decision use only.</p>
     </footer>
+  </div>
+
+  <!-- ─── BRAND PANEL ─── -->
+  <div class="brand-panel" id="brandPanel" aria-label="Brand customiser" role="complementary">
+    <button class="brand-panel-toggle" id="brandPanelToggle" aria-expanded="false" aria-controls="brandPanelBody" title="Brand settings">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <span>Brand</span>
+    </button>
+
+    <div class="brand-panel-body" id="brandPanelBody" hidden>
+      <p class="brand-panel-heading">Palette</p>
+      <div class="brand-swatches" role="group" aria-label="Colour theme">
+        <button class="swatch active" data-theme="dark-green"  title="Dark — Summer Green"  style="--sw:#87B8A3"></button>
+        <button class="swatch"        data-theme="dark-casal"  title="Dark — Casal"          style="--sw:#3B6065"></button>
+        <button class="swatch"        data-theme="pearl-light" title="Pearl Bush — Light"    style="--sw:#E6E2DE"></button>
+        <button class="swatch"        data-theme="charcoal"    title="Charcoal"              style="--sw:#414042"></button>
+      </div>
+
+      <p class="brand-panel-heading">Font weight</p>
+      <div class="brand-fonts" role="group" aria-label="Font weight">
+        <button class="font-btn"        data-weight="300">Light</button>
+        <button class="font-btn"        data-weight="400">Regular</button>
+        <button class="font-btn active" data-weight="700">Bold</button>
+        <button class="font-btn"        data-weight="900">Black</button>
+      </div>
+    </div>
   </div>
 
   <script src="assets/js/app.js"></script>
