@@ -1333,3 +1333,13 @@ h3 {
 .how-to-steps li:last-child { margin-bottom: 0; }
 
 .how-to-steps strong { color: #3B6065; }
+
+.how-to-use {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.how-to-hidden {
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+}

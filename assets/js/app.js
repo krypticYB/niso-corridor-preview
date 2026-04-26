@@ -56,6 +56,16 @@ document.querySelectorAll('.approve-btn').forEach((btn) => {
   });
 });
 
+// ── How to use — fade out after scroll ──
+const howToUse = document.querySelector('.how-to-use');
+if (howToUse) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      howToUse.classList.add('how-to-hidden');
+    }
+  }, { passive: true });
+}
+
 const revealables = document.querySelectorAll('.revealable');
 const sectionDots = document.querySelectorAll('.section-dot');
 const sections    = document.querySelectorAll('.wall-section');
