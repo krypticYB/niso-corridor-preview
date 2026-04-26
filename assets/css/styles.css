@@ -1291,3 +1291,45 @@ h3 {
   color: #1e2d30;
   font-weight: 700;
 }
+
+/* ── HOW TO USE ── */
+.how-to-use {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  z-index: 200;
+  background: #fff;
+  border: 1px solid rgba(59, 96, 101, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  max-width: 200px;
+}
+
+.how-to-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #3B6065;
+  margin: 0 0 8px;
+}
+
+.how-to-steps {
+  margin: 0;
+  padding-left: 16px;
+  list-style: decimal;
+}
+
+.how-to-steps li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.75rem;
+  color: #1e2d30;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.how-to-steps li:last-child { margin-bottom: 0; }
+
+.how-to-steps strong { color: #3B6065; }
