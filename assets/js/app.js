@@ -1,3 +1,61 @@
+// ── PDF links per wall — paste Google Drive / hosted PDF URLs here ──
+const wallPdfUrls = {
+  wall01: '',
+  wall02: '',
+  wall03: 'assets/pdfs/wall-3.pdf',
+  wall04: 'assets/pdfs/wall-4.pdf',
+  wall05: 'assets/pdfs/wall-5.pdf',
+  wall06: '',
+};
+
+// Wire PDF buttons to their URLs
+document.querySelectorAll('.approval-pdf-btn').forEach((btn) => {
+  const wallId = btn.closest('.wall-section')?.id;
+  const url = wallPdfUrls[wallId];
+  if (url) {
+    btn.href = url;
+    btn.textContent = 'View Design PDF →';
+  } else {
+    btn.href = '#';
+    btn.textContent = 'Design PDF — link pending';
+    btn.style.opacity = '0.5';
+    btn.addEventListener('click', (e) => e.preventDefault());
+  }
+});
+
+// ── Approval panels ──
+document.querySelectorAll('.approve-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const panel = btn.closest('.approval-panel');
+    const wallNum = btn.dataset.wall;
+    const wallName = btn.dataset.wallName;
+    const comment = panel.querySelector('.approval-comment').value.trim();
+
+    // Update badge in the wall header
+    const section = document.getElementById('wall' + wallNum);
+    if (section) {
+      const badge = section.querySelector('.approval-badge');
+      if (badge) {
+        badge.textContent = 'Approved';
+        badge.className = 'approval-badge status-approved';
+      }
+    }
+
+    // Disable button, show confirmation
+    btn.disabled = true;
+    btn.textContent = 'Approved';
+    const confirmed = panel.querySelector('.approved-confirmed');
+    if (confirmed) confirmed.hidden = false;
+
+    // Send approval via email
+    const subject = encodeURIComponent(`NISO Corridor — Wall ${wallNum} Approved`);
+    const body = encodeURIComponent(
+      `Wall ${wallNum}: ${wallName}\n\nStatus: APPROVED\n\nComments:\n${comment || 'No additional comments.'}`
+    );
+    window.open(`mailto:ibrahimmustapha1103@gmail.com?subject=${subject}&body=${body}`);
+  });
+});
+
 const revealables = document.querySelectorAll('.revealable');
 const sectionDots = document.querySelectorAll('.section-dot');
 const sections    = document.querySelectorAll('.wall-section');
