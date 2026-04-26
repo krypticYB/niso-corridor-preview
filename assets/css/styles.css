@@ -1218,7 +1218,7 @@ h3 {
   margin-right: auto;
 }
 
-/* Cleaner wall sections — more breathing room, no min-height drama */
+/* Cleaner wall sections */
 .wall-section {
   min-height: unset;
   padding: 48px 0;
@@ -1234,15 +1234,60 @@ h3 {
   box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
 
-/* Approval comment readable on light bg */
-.approval-comment {
-  background: rgba(255,255,255,0.9);
-  border-color: rgba(59,96,101,0.25);
-  color: var(--text);
-}
-
 /* Status bar on light bg */
 .project-status-bar {
   background: rgba(230,226,222,0.95);
   border-bottom: 1px solid rgba(59,96,101,0.15);
+}
+
+/* ── LIGHT THEME TEXT FIXES ── */
+[data-theme="pearl-light"] .wall-title-label {
+  color: #1e2d30;
+}
+
+[data-theme="pearl-light"] .wall-number {
+  color: rgba(59, 96, 101, 0.20);
+}
+
+[data-theme="pearl-light"] h1,
+[data-theme="pearl-light"] h2,
+[data-theme="pearl-light"] h3 {
+  color: #1e2d30;
+}
+
+[data-theme="pearl-light"] .hero-subtitle,
+[data-theme="pearl-light"] .section-intro {
+  color: #3b4f53;
+}
+
+[data-theme="pearl-light"] .wall-location {
+  color: #5a7a80;
+}
+
+[data-theme="pearl-light"] .install-block p,
+[data-theme="pearl-light"] .install-block li {
+  color: #1e2d30;
+}
+
+[data-theme="pearl-light"] .approval-comment {
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(59,96,101,0.25);
+  color: #1e2d30;
+}
+
+[data-theme="pearl-light"] .approval-comment::placeholder {
+  color: #7a9ea6;
+}
+
+[data-theme="pearl-light"] .section-nav .section-dot span {
+  color: #1e2d30;
+}
+
+[data-theme="pearl-light"] .status-phase {
+  color: #3b4f53;
+}
+
+[data-theme="pearl-light"] .status-phase.active-phase {
+  color: #1e2d30;
+  font-weight: 700;
 }
